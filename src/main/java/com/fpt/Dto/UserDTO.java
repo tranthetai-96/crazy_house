@@ -1,13 +1,20 @@
 package com.fpt.Dto;
 
-public class UserDTO {
-	
+public class UserDTO extends AbstractDTO {
+	private Long id;
 	private String username;
 	private String password;
 	private String fullname;
 	private String status;
 	private String rolecode;
 	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getRolecode() {
 		return rolecode;
 	}
